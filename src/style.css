@@ -1,0 +1,26 @@
+@tailwind base;
+h2{
+    @apply text-2xl capitalize mb-5 font-bold;
+}
+h3{
+    @apply text-xl capitalize font-bold ;
+}
+h4{
+    @apply text-sm capitalize font-bold mb-2;
+}
+img{
+    @apply object-cover;
+}
+@tailwind components;
+@layer components{
+    .image-rondu{
+        @apply rounded-md;
+    }
+
+    .btn{
+        @apply py-2 flex gap-2 text-sm font-bold px-4 absolute bottom-[-20px] text-center rounded-full bg-white  border border-orange-800 hover:bg-orange-700 hover:text-white outline-none;
+    }
+}
+@tailwind utilities;
+
+
